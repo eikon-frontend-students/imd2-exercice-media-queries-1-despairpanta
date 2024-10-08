@@ -16,3 +16,154 @@ img,
 video {
   display: block;
 }
+
+.hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.description-title {
+  color: #000;
+  font-family: "Hammersmith One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px 0;
+}
+
+.description-content {
+  color: #000;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin: 50px 0;
+}
+
+.news-title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.download-title {
+  color: #000;
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.download-content.mobile {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.news-title,
+.download-title {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 576px) {
+  .download-content a {
+    text-decoration: none;
+  }
+  .logos {
+    margin: 20px 0;
+    padding: 0px 59px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .description-title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .download-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .logos {
+    justify-content: space-between;
+  }
+  .description-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .download-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+  .logos img {
+    width: 60px;
+    height: 60px;
+  }
+  .description-content {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .description-title {
+    font-size: 38px;
+    text-align: left;
+  }
+  .description-content {
+    font-size: 20px;
+  }
+  .mobile {
+    display: none;
+  }
+  .download-title {
+    font-size: 36px;
+  }
+  .download-content.desktop {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .logos {
+    justify-content: flex-start;
+
+    gap: 30px;
+  }
+  .logos img {
+    width: 100px;
+    height: 100px;
+  }
+}
